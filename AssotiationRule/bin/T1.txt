@@ -1,0 +1,20 @@
+20
+laptop cellphone television
+cloth coat cap book
+laptop cellphone camera
+book pen ink
+television cloth
+cloth coat cellphone
+laptop cellphone book cloth
+laptop pen ink camera
+cloth coat camera
+television cloth coat
+cap book pen ink
+laptop cellphone cloth
+laptop cellphone television
+laptop cellphone cloth
+laptop cellphone book
+book int laptop
+celphone camera
+coat cloth pen
+book camera
