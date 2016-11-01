@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function solution(S){
+			var maxSubLength = 0;
+			var SLength = S.length;
+			// console.log(SLength);
+			var maxLength = 0, startIndex = 0, endIndex = 0;
+			var upperCaseFlag = false;
+			for (var i in S){
+				// console.log(S[i]);
+				
+				if(isNaN(S[i])){
+					endIndex++;
+					if(S[i] == S[i].toUpperCase()){
+						upperCaseFlag = true;
+					}
+				}else{
+					endIndex = i;
+					startIndex = i;
+				}
+				console.log("startIndex: ", startIndex, "; endIndex: ",endIndex)
+				if(maxLength < (endIndex - startIndex) && upperCaseFlag){
+					maxLength = endIndex - startIndex;
+				}
+			}
+			if (maxLength == 0 || SLength > 200 || SLength < 1){
+				return -1;
+			}
+			return maxLength;
+		}
+		var str = "abCd";
+		// var str = "abcsd";
+		console.log(solution(str));
+	</script>
+</body>
+</html>
